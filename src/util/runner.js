@@ -17,7 +17,7 @@ export async function run(dayNumber, inputType) {
         inputType === "string" ? fileContents : fileContents.trim().split("\n")
 
     part1 && runWithTiming(() => part1(input), "part 1", )
-    part2 && runWithTiming(() => part2(input), "part 3", )
+    part2 && runWithTiming(() => part2(input), "part 2", )
 }
 
 // Parse day parameter

@@ -7,3 +7,13 @@ export function* windowGenerator(inputArray, size) {
 export function windowed(inputArray, size) {
     return Array.from(windowGenerator(inputArray, size))
 }
+
+/**
+ * Transposes a given 2d array
+ * @param array
+ * @returns {*}
+ * @see https://stackoverflow.com/a/17428705
+ */
+export function transpose(array) {
+    return array[0].map((_, colIndex) => array.map(row => row[colIndex]));
+}
